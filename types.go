@@ -1001,6 +1001,7 @@ const (
 	EntityTypeTextLink             = "text_link"
 	EntityTypeTextMention          = "text_mention"
 	EntityTypeCustomEmoji          = "custom_emoji"
+	EntityTypeDateTime             = "date_time"
 )
 
 // TextQuote - This object contains information about the quoted part of a message that is replied to by the
