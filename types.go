@@ -970,6 +970,14 @@ type MessageEntity struct {
 	// getCustomEmojiStickers (https://core.telegram.org/bots/api#getcustomemojistickers) to get full information
 	// about the sticker
 	CustomEmojiID string `json:"custom_emoji_id,omitempty"`
+
+	// UnixTime - Optional. For “date_time” only, the Unix time associated with the entity
+	UnixTime int64 `json:"unix_time,omitempty"`
+
+	// DateTimeFormat - Optional. For “date_time” only, the string that defines the formatting of the date
+	// and time. See date-time entity formatting (https://core.telegram.org/bots/api#date-time-entity-formatting)
+	// for more details.
+	DateTimeFormat string `json:"date_time_format,omitempty"`
 }
 
 // MessageEntity types
